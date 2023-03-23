@@ -1,13 +1,12 @@
-package com.revature.ComplaintSubmissionApplication.service;
+package com.revature.complaintSubmissionApplication.service;
 
-import com.revature.ComplaintSubmissionApplication.entity.Complaint;
+import com.revature.complaintSubmissionApplication.entity.Complaint;
 
 import java.util.List;
 
 public interface ComplaintService {
     Complaint insert(Complaint complaint);
     List<Complaint> getAll();
-    List<Complaint> getAll(String status);
     Complaint getById(Long complaintId);
     List<Complaint> getByStatus(String status);
     List<Complaint> getByPriority(String priority);

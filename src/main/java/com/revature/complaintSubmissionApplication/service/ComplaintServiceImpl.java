@@ -1,7 +1,7 @@
-package com.revature.ComplaintSubmissionApplication.service;
+package com.revature.complaintSubmissionApplication.service;
 
-import com.revature.ComplaintSubmissionApplication.entity.Complaint;
-import com.revature.ComplaintSubmissionApplication.repository.ComplaintRepository;
+import com.revature.complaintSubmissionApplication.entity.Complaint;
+import com.revature.complaintSubmissionApplication.repository.ComplaintRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,11 +19,6 @@ public class ComplaintServiceImpl implements ComplaintService{
     @Override
     public List<Complaint> getAll() {
         return complaintRepository.findAll();
-    }
-
-    @Override
-    public List<Complaint> getAll(String status) {
-        return null;
     }
 
     @Override

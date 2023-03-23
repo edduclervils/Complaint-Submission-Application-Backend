@@ -1,6 +1,6 @@
-package com.revature.ComplaintSubmissionApplication.service;
+package com.revature.complaintSubmissionApplication.service;
 
-import com.revature.ComplaintSubmissionApplication.entity.Meeting;
+import com.revature.complaintSubmissionApplication.entity.Meeting;
 
 import java.util.List;
 

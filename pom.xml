@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.revature</groupId>
-	<artifactId>Complaint-Submission-Application</artifactId>
+	<artifactId>complaint-submission-application</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Complaint-Submission-Application</name>
 	<description>Full Stack project to create a Complaint Submission Application</description>

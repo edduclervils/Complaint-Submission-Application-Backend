@@ -1,7 +1,7 @@
-package com.revature.ComplaintSubmissionApplication.service;
+package com.revature.complaintSubmissionApplication.service;
 
-import com.revature.ComplaintSubmissionApplication.entity.Meeting;
-import com.revature.ComplaintSubmissionApplication.repository.MeetingRepository;
+import com.revature.complaintSubmissionApplication.entity.Meeting;
+import com.revature.complaintSubmissionApplication.repository.MeetingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +25,6 @@ public class MeetingServiceImpl implements MeetingService {
         return meetingRepository.findById(meetingId).get();
     }
 
-//TODO: RETURN TO THIS FUNCTION WHEN FRONT-END IS COMPLETED. VALUE(86400) MAY CHANGE BASED ON HOW TIME IS SAVED
     @Override
     public List<Meeting> getByDate(Long beginTimeRange) {
         return meetingRepository.findMeetingsThisDay(beginTimeRange,beginTimeRange+86400);

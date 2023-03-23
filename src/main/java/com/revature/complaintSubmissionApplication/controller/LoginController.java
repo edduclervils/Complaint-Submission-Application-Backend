@@ -1,10 +1,10 @@
-package com.revature.ComplaintSubmissionApplication.controller;
+package com.revature.complaintSubmissionApplication.controller;
 
-import com.revature.ComplaintSubmissionApplication.dto.AppUserReturnInfo;
-import com.revature.ComplaintSubmissionApplication.dto.LoginForm;
-import com.revature.ComplaintSubmissionApplication.entity.AppUser;
-import com.revature.ComplaintSubmissionApplication.exceptions.UserNotFoundException;
-import com.revature.ComplaintSubmissionApplication.service.AppUserService;
+import com.revature.complaintSubmissionApplication.dto.AppUserReturnInfo;
+import com.revature.complaintSubmissionApplication.dto.LoginForm;
+import com.revature.complaintSubmissionApplication.entity.AppUser;
+import com.revature.complaintSubmissionApplication.exceptions.UserNotFoundException;
+import com.revature.complaintSubmissionApplication.service.AppUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

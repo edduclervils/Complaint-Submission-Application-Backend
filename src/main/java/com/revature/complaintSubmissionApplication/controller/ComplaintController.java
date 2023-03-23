@@ -1,8 +1,8 @@
-package com.revature.ComplaintSubmissionApplication.controller;
+package com.revature.complaintSubmissionApplication.controller;
 
-import com.revature.ComplaintSubmissionApplication.dto.ComplaintContent;
-import com.revature.ComplaintSubmissionApplication.entity.Complaint;
-import com.revature.ComplaintSubmissionApplication.service.ComplaintService;
+import com.revature.complaintSubmissionApplication.dto.ComplaintContent;
+import com.revature.complaintSubmissionApplication.entity.Complaint;
+import com.revature.complaintSubmissionApplication.service.ComplaintService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
