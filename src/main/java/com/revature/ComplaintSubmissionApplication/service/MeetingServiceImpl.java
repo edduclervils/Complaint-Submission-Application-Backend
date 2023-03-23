@@ -32,6 +32,16 @@ public class MeetingServiceImpl implements MeetingService {
     }
 
     @Override
+    public List<Meeting> getBeforeDate(Long currentTime) {
+        return meetingRepository.findMeetingsBeforeDate(currentTime);
+    }
+
+    @Override
+    public List<Meeting> getAfterDate(Long currentTime) {
+        return meetingRepository.findMeetingsAfterDate(currentTime);
+    }
+
+    @Override
     public Meeting update(Meeting meeting) {
         return meetingRepository.save(meeting);
     }

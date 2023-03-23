@@ -2,6 +2,7 @@ package com.revature.ComplaintSubmissionApplication.service;
 
 import com.revature.ComplaintSubmissionApplication.dto.LoginForm;
 import com.revature.ComplaintSubmissionApplication.entity.AppUser;
+import com.revature.ComplaintSubmissionApplication.exceptions.UserNotFoundException;
 
 import java.util.List;
 
@@ -13,5 +14,6 @@ public interface AppUserService {
     AppUser update(AppUser appUser);
     boolean delete (Long userId);
     List<AppUser> getAll(String flag);
-    AppUser verify(LoginForm loginForm);
+    AppUser verify(LoginForm loginForm) throws UserNotFoundException;
+
 }

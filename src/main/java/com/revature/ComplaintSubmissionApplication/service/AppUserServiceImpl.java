@@ -3,7 +3,10 @@ package com.revature.ComplaintSubmissionApplication.service;
 
 import com.revature.ComplaintSubmissionApplication.dto.LoginForm;
 import com.revature.ComplaintSubmissionApplication.entity.AppUser;
+import com.revature.ComplaintSubmissionApplication.exceptions.UserNotFoundException;
 import com.revature.ComplaintSubmissionApplication.repository.AppUserRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
@@ -16,6 +19,8 @@ public class AppUserServiceImpl implements AppUserService{
 
     @Autowired
     AppUserRepository appUserRepository;
+
+    Logger logger1 = LoggerFactory.getLogger(AppUserServiceImpl.class);
 
     @Override
     public AppUser insert(AppUser appUser) {
@@ -60,7 +65,11 @@ public class AppUserServiceImpl implements AppUserService{
     }
 
     @Override
-    public AppUser verify(LoginForm loginForm) {
-        return appUserRepository.verifyLogin(loginForm.getUsername(), loginForm.getPassword());
+    public AppUser verify(LoginForm loginForm) throws UserNotFoundException {
+        AppUser returnedUser = appUserRepository.verifyLogin(loginForm.getUsername(), loginForm.getPassword());
+        if(returnedUser == null) throw new UserNotFoundException();
+        logger1.info("Login Successful");
+        return returnedUser;
     }
+
 }

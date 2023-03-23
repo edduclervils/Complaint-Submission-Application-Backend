@@ -16,15 +16,21 @@ public class AppUser extends AppUserReturnInfo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
+    private String fullName;
     private String username;
     private String password;
     private String role;
+    private String aboutMe;
+    private String imgLink;
 
 
-    public AppUser(String username, String password, String role){
+    public AppUser(String fullName, String username, String password, String role, String aboutMe, String imgLink){
+        this.fullName = fullName;
         this.username = username;
         this.password = password;
         this.role = role;
+        this.aboutMe = aboutMe;
+        this.imgLink = imgLink;
 
     }
 
