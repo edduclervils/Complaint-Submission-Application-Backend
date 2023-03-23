@@ -9,14 +9,21 @@ import lombok.NoArgsConstructor;
 @Data@NoArgsConstructor@AllArgsConstructor
 public class AppUserReturnInfo {
     private Long userId;
+    private String fullName;
     private String username;
     private String role;
+    private String aboutMe;
+    private String imgLink;
+
 
 
     public AppUserReturnInfo(AppUser appUser) {
-        this.username = appUser.getUsername();
         this.userId = appUser.getUserId();
+        this.fullName = appUser.getFullName();
+        this.username = appUser.getUsername();
         this.role = appUser.getRole();
+        this.aboutMe = appUser.getAboutMe();
+        this.imgLink = appUser.getImgLink();
     }
 
 }

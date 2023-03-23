@@ -9,6 +9,8 @@ public interface MeetingService {
     List<Meeting> getAll();
     Meeting getById(Long meetingId);
     List<Meeting> getByDate(Long beginTimeRange);
+    List<Meeting> getBeforeDate(Long currentTime);
+    List<Meeting> getAfterDate(Long currentTime);
     Meeting update(Meeting meeting);
     boolean delete(Long meetingId);
 }
