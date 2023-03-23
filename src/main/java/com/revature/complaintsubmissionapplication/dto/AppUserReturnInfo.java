@@ -1,6 +1,6 @@
-package com.revature.complaintSubmissionApplication.dto;
+package com.revature.complaintsubmissionapplication.dto;
 
-import com.revature.complaintSubmissionApplication.entity.AppUser;
+import com.revature.complaintsubmissionapplication.entity.AppUser;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

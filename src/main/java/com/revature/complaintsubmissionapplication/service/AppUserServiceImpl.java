@@ -1,10 +1,10 @@
-package com.revature.complaintSubmissionApplication.service;
+package com.revature.complaintsubmissionapplication.service;
 
 
-import com.revature.complaintSubmissionApplication.dto.LoginForm;
-import com.revature.complaintSubmissionApplication.entity.AppUser;
-import com.revature.complaintSubmissionApplication.exceptions.UserNotFoundException;
-import com.revature.complaintSubmissionApplication.repository.AppUserRepository;
+import com.revature.complaintsubmissionapplication.dto.LoginForm;
+import com.revature.complaintsubmissionapplication.entity.AppUser;
+import com.revature.complaintsubmissionapplication.exceptions.UserNotFoundException;
+import com.revature.complaintsubmissionapplication.repository.AppUserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

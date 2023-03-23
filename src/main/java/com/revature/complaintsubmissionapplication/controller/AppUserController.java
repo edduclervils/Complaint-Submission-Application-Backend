@@ -1,8 +1,8 @@
-package com.revature.complaintSubmissionApplication.controller;
+package com.revature.complaintsubmissionapplication.controller;
 
-import com.revature.complaintSubmissionApplication.dto.AppUserReturnInfo;
-import com.revature.complaintSubmissionApplication.entity.AppUser;
-import com.revature.complaintSubmissionApplication.service.AppUserService;
+import com.revature.complaintsubmissionapplication.dto.AppUserReturnInfo;
+import com.revature.complaintsubmissionapplication.entity.AppUser;
+import com.revature.complaintsubmissionapplication.service.AppUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

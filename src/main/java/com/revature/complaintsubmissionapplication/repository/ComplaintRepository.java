@@ -1,6 +1,6 @@
-package com.revature.complaintSubmissionApplication.repository;
+package com.revature.complaintsubmissionapplication.repository;
 
-import com.revature.complaintSubmissionApplication.entity.Complaint;
+import com.revature.complaintsubmissionapplication.entity.Complaint;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

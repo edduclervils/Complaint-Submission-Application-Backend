@@ -1,7 +1,7 @@
-package com.revature.complaintSubmissionApplication.service;
+package com.revature.complaintsubmissionapplication.service;
 
-import com.revature.complaintSubmissionApplication.entity.Complaint;
-import com.revature.complaintSubmissionApplication.repository.ComplaintRepository;
+import com.revature.complaintsubmissionapplication.entity.Complaint;
+import com.revature.complaintsubmissionapplication.repository.ComplaintRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

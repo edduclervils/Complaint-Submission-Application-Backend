@@ -1,8 +1,8 @@
-package com.revature.complaintSubmissionApplication.service;
+package com.revature.complaintsubmissionapplication.service;
 
-import com.revature.complaintSubmissionApplication.dto.LoginForm;
-import com.revature.complaintSubmissionApplication.entity.AppUser;
-import com.revature.complaintSubmissionApplication.exceptions.UserNotFoundException;
+import com.revature.complaintsubmissionapplication.dto.LoginForm;
+import com.revature.complaintsubmissionapplication.entity.AppUser;
+import com.revature.complaintsubmissionapplication.exceptions.UserNotFoundException;
 
 import java.util.List;
 

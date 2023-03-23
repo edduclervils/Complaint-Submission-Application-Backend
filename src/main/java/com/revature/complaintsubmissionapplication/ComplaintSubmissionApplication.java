@@ -1,4 +1,4 @@
-package com.revature.complaintSubmissionApplication;
+package com.revature.complaintsubmissionapplication;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
